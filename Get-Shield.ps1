@@ -43,6 +43,6 @@ for ($i = 0; $i -lt 50; $i++) {
     $fact = [Regex]::Replace($fact, "[^\w\s]", "")
     $fib = $(Get-FibonacciNumber -n $($i+1))
     $shield = Get-Shield -ltext "Cat_Fact_$fib" -rtext $($fact -replace " ", "_") 
-    $formatted = "[![Cat Fact $fib]($shield)](https://github.com/PackageFlipper/notNotOdd)"
+    $formatted = "[![Cat Fact $fib]($shield)](https://github.com/thomasrayner/cat-badges)"
     Write-Host $formatted
 }
